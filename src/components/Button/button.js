@@ -7,7 +7,7 @@ const ButtonComponent = ({ type, label }) => {
         <TouchableHighlight
             style={type == 'primary' ? styles.buttonPrimary : styles.buttonSecondary}
             onPress={() => {}}>
-            <Text style={type == 'primary' ? styles.textPrimary : styles.textSecondary}>Entrar</Text>
+            <Text style={type == 'primary' ? styles.textPrimary : styles.textSecondary}>{label.toUpperCase()}</Text>
         </TouchableHighlight>
     )
 };

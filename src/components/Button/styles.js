@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     textPrimary: {
         textAlign: 'center',
         fontWeight: 'bold',
-        fontSize: 18,
+        fontSize: 16,
         color: '#FFF'
     },
     buttonSecondary: {
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     textSecondary: {
         textAlign: 'center',
         fontWeight: 'bold',
-        fontSize: 18,
+        fontSize: 16,
         color: '#E02041'
     },
 })
