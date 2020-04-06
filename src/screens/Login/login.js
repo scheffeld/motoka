@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { View, Text, Image, TouchableHighlight } from 'react-native';
+import { View, Text, Image, TouchableHighlight, StatusBar } from 'react-native';
 import { Button, Input, Form, Item, Label } from 'native-base';
 
 import styles from './styles'
@@ -13,8 +13,9 @@ const Login = () => {
     const navigation = useNavigation();
     return(
         <View style={styles.container}>
+            <StatusBar backgroundColor='#FFF' barStyle='dark-content'/>
             <View>
-                <Image source={logoImg}/>
+                <Text style={styles.textBold}>motoka</Text>
             </View>
             <View>
                 <Text style={styles.text}>Continue com o seu</Text>

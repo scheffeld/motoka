@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import Fonts from '../../assets/utils/fonts'
 
 const styles = StyleSheet.create({
     container: {
@@ -6,6 +7,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingHorizontal: 10,
         paddingVertical: 10,
+        backgroundColor: '#FFF'
     },
     text: {
         fontSize: 18,
@@ -14,8 +16,8 @@ const styles = StyleSheet.create({
     },
     textBold: {
         fontSize: 36,
-        fontWeight: '700',
-        color: '#E02041'
+        color: '#E02041',
+        fontWeight: 'bold'
     },
     form: {
         marginLeft: -10,
@@ -23,12 +25,12 @@ const styles = StyleSheet.create({
     },
     buttonForgot: {
         alignSelf: 'flex-end',
-        marginVertical: 10
+        marginVertical: 10,
     },
     textForgot: {
         color: '#E02041',
         fontWeight: '700'
-    },
+    }
 });
 
 export default styles;
