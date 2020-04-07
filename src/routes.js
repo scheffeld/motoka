@@ -9,6 +9,7 @@ import Login from './screens/Login/login'
 import NewUser from './screens/NewUser/newUser'
 import Incidents from './screens/Incidents/incidents'
 import NewIncident from './screens/NewIncident/newIncident'
+import Details from './screens/Details/details'
 
 const App = createStackNavigator();
 
@@ -31,6 +32,9 @@ const Routes = () => {
                 <App.Screen
                     name='NewIncident'
                     component={NewIncident}/>
+                <App.Screen
+                    name='Details'
+                    component={Details}/>
             </App.Navigator>
         </NavigationContainer>
     )
