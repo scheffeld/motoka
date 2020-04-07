@@ -41,7 +41,7 @@ const Login = () => {
                 <ButtonComponent
                     type='primary'
                     label='Entrar'
-                    onPress={() => navigation.push('Home')}/>
+                    onPress={() => navigation.push('Incidents')}/>
             </View>
         </View>
     )
