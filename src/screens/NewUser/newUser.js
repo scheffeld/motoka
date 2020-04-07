@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, FlatList } from 'react-native';
 import { Form } from 'native-base';
+import { useNavigation } from '@react-navigation/native'
 
 import styles from './styles'
 
@@ -9,9 +10,10 @@ import InputComponent from '../../components/Input/input'
 import HeaderComponent from '../../components/Header/header'
 
 const NewUser = () => {
+    const navigation = useNavigation()
     return(
         <View style={styles.container}>
-            <HeaderComponent subTitle='Novo Usuário'/>
+            <HeaderComponent subTitle='Novo Usuário' iconName='chevron-left' onPress={() => navigation.goBack()}/>
             <View style={styles.content}>
                 <Form style={styles.form}>
                     <View>
